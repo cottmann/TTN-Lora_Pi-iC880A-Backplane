@@ -172,6 +172,14 @@
 <wire x1="105.41" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
 <hole x="99.06" y="38.1" drill="5.5"/>
 <text x="90.17" y="55.88" size="1.778" layer="16" rot="MR0">v1, 10.1.16, Tobias Cottmann</text>
+<circle x="-5.08" y="71.12" radius="2.54" width="0.254" layer="16"/>
+<circle x="-5.08" y="0" radius="2.54" width="0.254" layer="16"/>
+<circle x="110.49" y="71.12" radius="2.54" width="0.254" layer="16"/>
+<circle x="110.49" y="0" radius="2.54" width="0.254" layer="16"/>
+<circle x="0" y="-5.08" radius="2.54" width="0.254" layer="16"/>
+<circle x="105.41" y="76.2" radius="2.54" width="0.254" layer="16"/>
+<circle x="105.41" y="-5.08" radius="2.54" width="0.254" layer="16"/>
+<circle x="0" y="76.2" radius="2.54" width="0.254" layer="16"/>
 </plain>
 <libraries>
 <library name="RPI-Zero">
@@ -755,6 +763,54 @@ design rules under a new name.</description>
 <wire x1="3.81" y1="30.48" x2="3.81" y2="3.81" width="0.4064" layer="16"/>
 <wire x1="3.81" y1="3.81" x2="58.42" y2="3.81" width="0.4064" layer="16"/>
 <wire x1="58.42" y1="3.81" x2="60.96" y2="6.35" width="0.4064" layer="16"/>
+</signal>
+<signal name="N$1">
+<wire x1="-8.89" y1="71.12" x2="-1.27" y2="71.12" width="0.254" layer="16"/>
+</signal>
+<signal name="N$2">
+<wire x1="-5.08" y1="74.93" x2="-5.08" y2="67.31" width="0.254" layer="16"/>
+</signal>
+<signal name="N$3">
+<wire x1="-8.89" y1="0" x2="-1.27" y2="0" width="0.254" layer="16"/>
+</signal>
+<signal name="N$4">
+<wire x1="-5.08" y1="3.81" x2="-5.08" y2="-3.81" width="0.254" layer="16"/>
+</signal>
+<signal name="N$5">
+<wire x1="106.68" y1="71.12" x2="114.3" y2="71.12" width="0.254" layer="16"/>
+</signal>
+<signal name="N$6">
+<wire x1="110.49" y1="74.93" x2="110.49" y2="67.31" width="0.254" layer="16"/>
+</signal>
+<signal name="N$7">
+<wire x1="106.68" y1="0" x2="114.3" y2="0" width="0.254" layer="16"/>
+</signal>
+<signal name="N$8">
+<wire x1="110.49" y1="3.81" x2="110.49" y2="-3.81" width="0.254" layer="16"/>
+</signal>
+<signal name="N$9">
+<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.254" layer="16"/>
+</signal>
+<signal name="N$10">
+<wire x1="0" y1="-1.27" x2="0" y2="-8.89" width="0.254" layer="16"/>
+</signal>
+<signal name="N$11">
+<wire x1="101.6" y1="76.2" x2="109.22" y2="76.2" width="0.254" layer="16"/>
+</signal>
+<signal name="N$12">
+<wire x1="105.41" y1="80.01" x2="105.41" y2="72.39" width="0.254" layer="16"/>
+</signal>
+<signal name="N$13">
+<wire x1="101.6" y1="-5.08" x2="109.22" y2="-5.08" width="0.254" layer="16"/>
+</signal>
+<signal name="N$14">
+<wire x1="105.41" y1="-1.27" x2="105.41" y2="-8.89" width="0.254" layer="16"/>
+</signal>
+<signal name="N$15">
+<wire x1="-3.81" y1="76.2" x2="3.81" y2="76.2" width="0.254" layer="16"/>
+</signal>
+<signal name="N$16">
+<wire x1="0" y1="80.01" x2="0" y2="72.39" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
