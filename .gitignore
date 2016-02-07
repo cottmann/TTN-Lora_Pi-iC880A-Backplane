@@ -12,9 +12,9 @@
 eagle.epf
 
 #Autorouter log
-.pro
-
-.lck
+*.pro
+*.lck
+*.job
 
 # CAM files
 *.$$$
