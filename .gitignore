@@ -11,6 +11,10 @@
 # comment the following line if you want to have your project file included.
 eagle.epf
 
+*.pro
+*.lck
+*.job
+
 # CAM files
 *.$$$
 *.cmp
