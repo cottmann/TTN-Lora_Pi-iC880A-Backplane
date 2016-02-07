@@ -168,20 +168,19 @@
 <plain>
 <wire x1="0" y1="0" x2="0" y2="68.58" width="0.3048" layer="20"/>
 <wire x1="0" y1="68.58" x2="44.45" y2="68.58" width="0.3048" layer="20"/>
-<wire x1="44.45" y1="68.58" x2="44.45" y2="78.74" width="0.3048" layer="20"/>
-<wire x1="44.45" y1="78.74" x2="57.15" y2="78.74" width="0.3048" layer="20"/>
-<wire x1="57.15" y1="78.74" x2="57.15" y2="0" width="0.3048" layer="20"/>
+<wire x1="44.45" y1="68.58" x2="44.45" y2="80.01" width="0.3048" layer="20"/>
+<wire x1="44.45" y1="80.01" x2="57.15" y2="80.01" width="0.3048" layer="20"/>
+<wire x1="57.15" y1="80.01" x2="57.15" y2="0" width="0.3048" layer="20"/>
 <wire x1="57.15" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
-<hole x="50.8" y="73.66" drill="6.5"/>
 <hole x="52.07" y="55.88" drill="3.2"/>
 <hole x="52.07" y="8.89" drill="3.2"/>
 <hole x="3.81" y="8.89" drill="3.2"/>
 <hole x="3.81" y="35.56" drill="3.2"/>
 <hole x="52.07" y="35.56" drill="3.2"/>
 <wire x1="0" y1="68.58" x2="44.45" y2="68.58" width="0" layer="46"/>
-<wire x1="44.45" y1="68.58" x2="44.45" y2="78.74" width="0" layer="46"/>
-<wire x1="44.45" y1="78.74" x2="57.15" y2="78.74" width="0" layer="46"/>
-<wire x1="57.15" y1="78.74" x2="57.15" y2="0" width="0" layer="46"/>
+<wire x1="44.45" y1="68.58" x2="44.45" y2="80.01" width="0" layer="46"/>
+<wire x1="44.45" y1="80.01" x2="57.15" y2="80.01" width="0" layer="46"/>
+<wire x1="57.15" y1="80.01" x2="57.15" y2="0" width="0" layer="46"/>
 <wire x1="57.15" y1="0" x2="0" y2="0" width="0" layer="46"/>
 <wire x1="0" y1="0" x2="0" y2="68.58" width="0" layer="46"/>
 </plain>
@@ -493,6 +492,9 @@
 <rectangle x1="56.896" y1="27.686" x2="57.404" y2="28.194" layer="51"/>
 <rectangle x1="56.896" y1="25.146" x2="57.404" y2="25.654" layer="51"/>
 </package>
+<package name="SMA-PIGTAIL-MOUNT">
+<pad name="GND" x="0" y="0" drill="6.5" diameter="10"/>
+</package>
 </packages>
 </library>
 <library name="con-phoenix-254">
@@ -708,6 +710,7 @@ www.fischer-leiterplatten.de
 <attribute name="OC_FARNELL" value="unknown" x="3.81" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MF" value="" x="3.81" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
+<element name="U$3" library="tobias" package="SMA-PIGTAIL-MOUNT" value="SMA-PIGTAIL-MOUNT" x="50.8" y="73.66"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -725,8 +728,8 @@ www.fischer-leiterplatten.de
 <polygon width="0.3048" layer="16" isolate="0.4064" orphans="yes">
 <vertex x="0" y="0"/>
 <vertex x="57.15" y="0"/>
-<vertex x="57.15" y="78.74"/>
-<vertex x="44.45" y="78.74"/>
+<vertex x="57.15" y="80.01"/>
+<vertex x="44.45" y="80.01"/>
 <vertex x="44.45" y="68.58"/>
 <vertex x="0" y="68.58"/>
 </polygon>
@@ -745,12 +748,13 @@ www.fischer-leiterplatten.de
 <polygon width="0.4064" layer="1" isolate="0.3048" orphans="yes">
 <vertex x="0" y="68.58"/>
 <vertex x="44.45" y="68.58"/>
-<vertex x="44.45" y="78.74"/>
-<vertex x="57.15" y="78.74"/>
+<vertex x="44.45" y="80.01"/>
+<vertex x="57.15" y="80.01"/>
 <vertex x="57.15" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="X1" pad="2"/>
+<contactref element="U$3" pad="GND"/>
 </signal>
 <signal name="RESET">
 <contactref element="U$2" pad="RESET"/>

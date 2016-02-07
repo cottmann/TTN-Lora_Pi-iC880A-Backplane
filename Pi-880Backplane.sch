@@ -799,6 +799,9 @@
 <rectangle x1="56.896" y1="27.686" x2="57.404" y2="28.194" layer="51"/>
 <rectangle x1="56.896" y1="25.146" x2="57.404" y2="25.654" layer="51"/>
 </package>
+<package name="SMA-PIGTAIL-MOUNT">
+<pad name="GND" x="0" y="0" drill="6.5" diameter="10"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IMST-IC880A">
@@ -878,6 +881,10 @@
 <pin name="GPIO21/MISO" x="25.4" y="-17.78" length="short" rot="R180"/>
 <text x="-20.32" y="35.56" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="-20.32" y="33.655" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="SMA-PIGTAIL-MOUNT">
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<pin name="GND" x="-5.08" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1022,6 +1029,21 @@ Datasheet: http://www.wireless-solutions.de/images/stories/downloads/Radio%20Mod
 </device>
 </devices>
 </deviceset>
+<deviceset name="SMA-PIGTAIL-MOUNT">
+<gates>
+<gate name="G$1" symbol="SMA-PIGTAIL-MOUNT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA-PIGTAIL-MOUNT">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="con-phoenix-254">
@@ -1102,6 +1124,7 @@ Grid 2.54 mm&lt;p&gt;
 <part name="U$1" library="tobias" deviceset="RPI-ZERO" device="NODRILLS"/>
 <part name="U$2" library="tobias" deviceset="IC880A" device=""/>
 <part name="X1" library="con-phoenix-254" deviceset="MPT2" device=""/>
+<part name="U$3" library="tobias" deviceset="SMA-PIGTAIL-MOUNT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1114,6 +1137,7 @@ Grid 2.54 mm&lt;p&gt;
 <instance part="U$2" gate="G$1" x="111.76" y="83.82"/>
 <instance part="X1" gate="-1" x="20.32" y="50.8"/>
 <instance part="X1" gate="-2" x="20.32" y="45.72"/>
+<instance part="U$3" gate="G$1" x="43.18" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -1182,6 +1206,10 @@ Grid 2.54 mm&lt;p&gt;
 <pinref part="U$1" gate="G$1" pin="GND@34"/>
 <wire x1="139.7" y1="15.24" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
 <label x="142.24" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
