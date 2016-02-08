@@ -166,32 +166,68 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="0" y2="71.12" width="0.3048" layer="20"/>
-<wire x1="0" y1="71.12" x2="105.41" y2="71.12" width="0.3048" layer="20"/>
-<wire x1="105.41" y1="71.12" x2="105.41" y2="0" width="0.3048" layer="20"/>
-<wire x1="105.41" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
-<hole x="99.06" y="38.1" drill="5.5"/>
-<text x="90.17" y="55.88" size="1.778" layer="16" rot="MR0">v1, 10.1.16, Tobias Cottmann</text>
-<circle x="-5.08" y="71.12" radius="2.54" width="0.254" layer="16"/>
-<circle x="-5.08" y="0" radius="2.54" width="0.254" layer="16"/>
-<circle x="110.49" y="71.12" radius="2.54" width="0.254" layer="16"/>
-<circle x="110.49" y="0" radius="2.54" width="0.254" layer="16"/>
-<circle x="0" y="-5.08" radius="2.54" width="0.254" layer="16"/>
-<circle x="105.41" y="76.2" radius="2.54" width="0.254" layer="16"/>
-<circle x="105.41" y="-5.08" radius="2.54" width="0.254" layer="16"/>
-<circle x="0" y="76.2" radius="2.54" width="0.254" layer="16"/>
+<wire x1="0" y1="0" x2="0" y2="68.58" width="0.3048" layer="20"/>
+<wire x1="0" y1="68.58" x2="44.45" y2="68.58" width="0.3048" layer="20"/>
+<wire x1="44.45" y1="68.58" x2="44.45" y2="80.01" width="0.3048" layer="20"/>
+<wire x1="44.45" y1="80.01" x2="57.15" y2="80.01" width="0.3048" layer="20"/>
+<wire x1="57.15" y1="80.01" x2="57.15" y2="0" width="0.3048" layer="20"/>
+<wire x1="57.15" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
+<hole x="52.07" y="55.88" drill="3.2"/>
+<hole x="52.07" y="8.89" drill="3.2"/>
+<hole x="3.81" y="8.89" drill="3.2"/>
+<hole x="3.81" y="35.56" drill="3.2"/>
+<hole x="52.07" y="35.56" drill="3.2"/>
+<wire x1="0" y1="68.58" x2="44.45" y2="68.58" width="0" layer="46"/>
+<wire x1="44.45" y1="68.58" x2="44.45" y2="80.01" width="0" layer="46"/>
+<wire x1="44.45" y1="80.01" x2="57.15" y2="80.01" width="0" layer="46"/>
+<wire x1="57.15" y1="80.01" x2="57.15" y2="0" width="0" layer="46"/>
+<wire x1="57.15" y1="0" x2="0" y2="0" width="0" layer="46"/>
+<wire x1="0" y1="0" x2="0" y2="68.58" width="0" layer="46"/>
 </plain>
 <libraries>
-<library name="RPI-Zero">
-<description>Generated from &lt;b&gt;TMC2660-test-with-grbl.brd&lt;/b&gt;&lt;p&gt;
-by exp-project-lbr.ulp</description>
+<library name="tobias">
 <packages>
-<package name="RASPBERRYPI_BASTELSTUBE_V13_RASPI_BOARD_B+_FULL">
-<description>Raspberry Pi board model B+, full outline with position of big connectors &amp;amp; drill holes</description>
+<package name="IC880A">
+<pad name="GND" x="16.51" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="P$2" x="19.05" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="NGPS_RESET" x="21.59" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="P$4" x="24.13" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="EN_GPS_SUPPLY" x="26.67" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="P$6" x="29.21" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPIO0" x="31.75" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPIO1" x="34.29" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPIO2" x="36.83" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPIO3" x="39.37" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPIO4" x="41.91" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GND2" x="44.45" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="RESET" x="46.99" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="CLK" x="49.53" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="MISO" x="52.07" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="MOSI" x="54.61" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="NSS" x="57.15" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="SCAN_MODE" x="59.69" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="PPS" x="62.23" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="GND3" x="64.77" y="3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="VDD" x="19.01" y="65.11" drill="1.016" shape="long" rot="R90"/>
+<pad name="GND4" x="21.55" y="65.11" drill="1.016" shape="long" rot="R90"/>
+<pad name="VDDB" x="24.09" y="65.11" drill="1.016" shape="long" rot="R90"/>
+<wire x1="0.91" y1="0.81" x2="0.91" y2="68.11" width="0" layer="52"/>
+<wire x1="0.91" y1="68.11" x2="80.71" y2="68.11" width="0" layer="52"/>
+<wire x1="80.71" y1="68.11" x2="80.71" y2="0.81" width="0" layer="52"/>
+<wire x1="80.71" y1="0.81" x2="0.91" y2="0.81" width="0" layer="52"/>
+<pad name="GND5" x="62.21" y="65.11" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPS_TX" x="64.75" y="65.11" drill="1.016" shape="long" rot="R90"/>
+<pad name="GPS_RX" x="67.29" y="65.11" drill="1.016" shape="long" rot="R90"/>
+<text x="2.18" y="2.08" size="1.27" layer="21">iC880A</text>
+<text x="2.18" y="5.89" size="1.27" layer="25">&gt;Name</text>
+<text x="2.18" y="4.62" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="RPI-ZERO-NODRILLS">
+<description>Raspberry Pi Zero, full outline with position of big connectors &amp;amp; drill holes</description>
 <circle x="3.99" y="3.66" radius="3.1" width="0.127" layer="52"/>
 <circle x="61.99" y="3.66" radius="3.1" width="0.127" layer="52"/>
 <circle x="61.99" y="26.66" radius="3.1" width="0.127" layer="52"/>
-<circle x="3.99" y="26.66" radius="3.1" width="0.127" layer="52"/>
+<circle x="3.99" y="26.66" radius="2.75" width="0.127" layer="52"/>
 <wire x1="0.49" y1="3.16" x2="3.49" y2="0.16" width="0.254" layer="52" curve="90"/>
 <wire x1="3.49" y1="0.16" x2="7.34" y2="0.16" width="0.254" layer="52"/>
 <wire x1="7.34" y1="0.16" x2="14.84" y2="0.16" width="0.254" layer="52"/>
@@ -218,10 +254,6 @@ by exp-project-lbr.ulp</description>
 <wire x1="7.09" y1="-0.34" x2="15.09" y2="-0.34" width="0.127" layer="52"/>
 <wire x1="15.09" y1="-0.34" x2="14.84" y2="0.16" width="0.127" layer="52"/>
 <text x="8.5425" y="22.5325" size="1.016" layer="21" font="vector" ratio="10">1</text>
-<hole x="3.99" y="3.66" drill="2.75"/>
-<hole x="3.99" y="26.66" drill="2.75"/>
-<hole x="61.99" y="3.66" drill="2.75"/>
-<hole x="61.99" y="26.66" drill="2.75"/>
 <wire x1="37.39" y1="0.16" x2="38.24" y2="0.16" width="0.254" layer="52"/>
 <wire x1="38.24" y1="0.16" x2="45.74" y2="0.16" width="0.254" layer="52"/>
 <wire x1="38.24" y1="0.16" x2="38.24" y2="5.91" width="0.127" layer="52"/>
@@ -379,8 +411,8 @@ by exp-project-lbr.ulp</description>
 <wire x1="57.785" y1="24.13" x2="56.515" y2="24.13" width="0.1524" layer="21"/>
 <wire x1="55.88" y1="24.765" x2="56.515" y2="24.13" width="0.1524" layer="21"/>
 <wire x1="58.42" y1="28.575" x2="58.42" y2="24.765" width="0.1524" layer="21"/>
-<pad name="3V3@1" x="8.89" y="25.4" drill="1.016" shape="octagon"/>
-<pad name="5V0@2" x="8.89" y="27.94" drill="1.016" shape="octagon"/>
+<pad name="3V3@1" x="8.89" y="25.4" drill="1.016" shape="square"/>
+<pad name="5V0@2" x="8.89" y="27.94" drill="1.016"/>
 <pad name="GPIO2/SDA@3" x="11.43" y="25.4" drill="1.016" shape="octagon"/>
 <pad name="5V0@4" x="11.43" y="27.94" drill="1.016" shape="octagon"/>
 <pad name="GPIO3/SCL@5" x="13.97" y="25.4" drill="1.016" shape="octagon"/>
@@ -420,12 +452,12 @@ by exp-project-lbr.ulp</description>
 <pad name="GND@39" x="57.15" y="25.4" drill="1.016" shape="octagon"/>
 <pad name="GPIO21/SCLR@40" x="57.15" y="27.94" drill="1.016" shape="octagon"/>
 <rectangle x1="8.636" y1="25.146" x2="9.144" y2="25.654" layer="51"/>
-<rectangle x1="8.636" y1="27.686" x2="9.144" y2="28.194" layer="51"/>
-<rectangle x1="11.176" y1="27.686" x2="11.684" y2="28.194" layer="51"/>
-<rectangle x1="11.176" y1="25.146" x2="11.684" y2="25.654" layer="51"/>
-<rectangle x1="13.716" y1="27.686" x2="14.224" y2="28.194" layer="51"/>
-<rectangle x1="13.716" y1="25.146" x2="14.224" y2="25.654" layer="51"/>
-<rectangle x1="16.256" y1="27.686" x2="16.764" y2="28.194" layer="51"/>
+<rectangle x1="8.636" y1="27.686" x2="9.144" y2="28.194" layer="21"/>
+<rectangle x1="11.176" y1="27.686" x2="11.684" y2="28.194" layer="21"/>
+<rectangle x1="11.176" y1="25.146" x2="11.684" y2="25.654" layer="21"/>
+<rectangle x1="13.716" y1="27.686" x2="14.224" y2="28.194" layer="21"/>
+<rectangle x1="13.716" y1="25.146" x2="14.224" y2="25.654" layer="21"/>
+<rectangle x1="16.256" y1="27.686" x2="16.764" y2="28.194" layer="21"/>
 <rectangle x1="18.796" y1="27.686" x2="19.304" y2="28.194" layer="51"/>
 <rectangle x1="21.336" y1="27.686" x2="21.844" y2="28.194" layer="51"/>
 <rectangle x1="16.256" y1="25.146" x2="16.764" y2="25.654" layer="51"/>
@@ -460,44 +492,31 @@ by exp-project-lbr.ulp</description>
 <rectangle x1="56.896" y1="27.686" x2="57.404" y2="28.194" layer="51"/>
 <rectangle x1="56.896" y1="25.146" x2="57.404" y2="25.654" layer="51"/>
 </package>
+<package name="SMA-PIGTAIL-MOUNT">
+<pad name="GND" x="0" y="0" drill="6.5" diameter="10"/>
+</package>
 </packages>
 </library>
-<library name="tobias">
+<library name="con-phoenix-254">
+<description>&lt;b&gt;Phoenix Connectors&lt;/b&gt;&lt;p&gt;
+Grid 2.54 mm&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="IC880A">
-<pad name="GND" x="16.51" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$2" x="19.05" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="NGPS_RESET" x="21.59" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$4" x="24.13" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="EN_GPS_SUPPLY" x="26.67" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="P$6" x="29.21" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPIO0" x="31.75" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPIO1" x="34.29" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPIO2" x="36.83" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPIO3" x="39.37" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPIO4" x="41.91" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GND2" x="44.45" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="RESET" x="46.99" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="CLK" x="49.53" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="MISO" x="52.07" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="MOSI" x="54.61" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="NSS" x="57.15" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="SCAN_MODE" x="59.69" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="PPS" x="62.23" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="GND3" x="64.77" y="3.81" drill="0.8" shape="long" rot="R90"/>
-<pad name="VDD" x="19.01" y="65.11" drill="0.8" shape="long" rot="R90"/>
-<pad name="GND4" x="21.55" y="65.11" drill="0.8" shape="long" rot="R90"/>
-<pad name="VDDB" x="24.09" y="65.11" drill="0.8" shape="long" rot="R90"/>
-<wire x1="0.91" y1="0.81" x2="0.91" y2="68.11" width="0" layer="52"/>
-<wire x1="0.91" y1="68.11" x2="80.71" y2="68.11" width="0" layer="52"/>
-<wire x1="80.71" y1="68.11" x2="80.71" y2="0.81" width="0" layer="52"/>
-<wire x1="80.71" y1="0.81" x2="0.91" y2="0.81" width="0" layer="52"/>
-<pad name="GND5" x="62.21" y="65.11" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPS_TX" x="64.75" y="65.11" drill="0.8" shape="long" rot="R90"/>
-<pad name="GPS_RX" x="67.29" y="65.11" drill="0.8" shape="long" rot="R90"/>
-<text x="2.18" y="2.08" size="1.27" layer="21">iC880A</text>
-<text x="2.18" y="5.89" size="1.27" layer="25">&gt;Name</text>
-<text x="2.18" y="4.62" size="1.27" layer="27">&gt;Value</text>
+<package name="2POL254">
+<description>&lt;b&gt;PHOENIX CONNECTOR&lt;/b&gt;</description>
+<wire x1="-2.67" y1="-1.45" x2="2.67" y2="-1.45" width="0.254" layer="21"/>
+<wire x1="2.67" y1="-1.45" x2="2.67" y2="1.45" width="0.254" layer="21"/>
+<wire x1="2.67" y1="1.45" x2="-2.67" y2="1.45" width="0.254" layer="21"/>
+<wire x1="-2.67" y1="1.45" x2="-2.67" y2="-1.45" width="0.254" layer="21"/>
+<wire x1="-2.56" y1="1.1" x2="2.56" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-0.508" x2="-0.762" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="0.508" y1="-0.254" x2="2.032" y2="0.127" width="0.1524" layer="51"/>
+<circle x="-1.27" y="0" radius="0.889" width="0.1524" layer="51"/>
+<circle x="1.27" y="0" radius="0.889" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="1.2" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.2" shape="long" rot="R90"/>
+<text x="-2.794" y="1.778" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.794" y="-3.048" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -510,59 +529,52 @@ by exp-project-lbr.ulp</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="Fischer-LP_BGA">
+<description language="de">&lt;b&gt;Fischer Leiterplatten Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
+Übertragen am 25.03.2008 von 
+www.fischer-leiterplatten.de
+&lt;br&gt;
+Überprüft am 26.05.2009
+&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="8mil"/>
-<param name="mdSmdVia" value="8mil"/>
-<param name="mdSmdSmd" value="8mil"/>
+<param name="mdWireWire" value="0.15mm"/>
+<param name="mdWirePad" value="0.15mm"/>
+<param name="mdWireVia" value="0.15mm"/>
+<param name="mdPadPad" value="0.15mm"/>
+<param name="mdPadVia" value="0.15mm"/>
+<param name="mdViaVia" value="0.15mm"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="40mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="0.2mm"/>
+<param name="mdDrill" value="0.3mm"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="24mil"/>
+<param name="msWidth" value="0.15mm"/>
+<param name="msDrill" value="0.3mm"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0.25"/>
-<param name="rvPadInner" value="0.25"/>
-<param name="rvPadBottom" value="0.25"/>
-<param name="rvViaOuter" value="0.25"/>
-<param name="rvViaInner" value="0.25"/>
+<param name="rvPadTop" value="0.15"/>
+<param name="rvPadInner" value="0.15"/>
+<param name="rvPadBottom" value="0.15"/>
+<param name="rvViaOuter" value="0.15"/>
+<param name="rvViaInner" value="0.15"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
-<param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
-<param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
-<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinPadTop" value="0.2mm"/>
+<param name="rlMaxPadTop" value="3mm"/>
+<param name="rlMinPadInner" value="0.2mm"/>
+<param name="rlMaxPadInner" value="3mm"/>
+<param name="rlMinPadBottom" value="0.2mm"/>
+<param name="rlMaxPadBottom" value="3mm"/>
+<param name="rlMinViaOuter" value="0.15mm"/>
+<param name="rlMaxViaOuter" value="3mm"/>
+<param name="rlMinViaInner" value="0.15mm"/>
+<param name="rlMaxViaInner" value="3mm"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
 <param name="rlMinMicroViaInner" value="4mil"/>
@@ -574,15 +586,15 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="0.05mm"/>
+<param name="mlMaxStopFrame" value="0.05mm"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="0.5mm"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="0.15mm"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
@@ -690,24 +702,36 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="RPI-Zero" package="RASPBERRYPI_BASTELSTUBE_V13_RASPI_BOARD_B+_FULL" value="RPI-ZERO" x="-19.05" y="69.85" rot="R270"/>
-<element name="U$2" library="tobias" package="IC880A" value="IC880A" x="11.43" y="2.54"/>
+<element name="U$1" library="tobias" package="RPI-ZERO-NODRILLS" value="RPI-ZERONODRILLS" x="36.83" y="67.31" rot="MR270"/>
+<element name="U$2" library="tobias" package="IC880A" value="IC880A" x="-12.7" y="0"/>
+<element name="X1" library="con-phoenix-254" package="2POL254" value="" x="3.81" y="57.15" rot="MR270">
+<attribute name="MPN" value="" x="3.81" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="3.81" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="3.81" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="" x="3.81" y="57.15" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="U$3" library="tobias" package="SMA-PIGTAIL-MOUNT" value="SMA-PIGTAIL-MOUNT" x="50.8" y="73.66"/>
 </elements>
 <signals>
 <signal name="VCC">
 <contactref element="U$2" pad="VDD"/>
 <contactref element="U$1" pad="5V0@2"/>
-<wire x1="8.89" y1="60.96" x2="24.1" y2="60.99" width="0.4064" layer="16"/>
-<wire x1="24.1" y1="60.99" x2="24.13" y2="60.96" width="0.4064" layer="16"/>
-<wire x1="24.13" y1="60.96" x2="24.13" y2="61.34" width="0.4064" layer="16"/>
-<wire x1="24.13" y1="61.34" x2="30.44" y2="67.65" width="0.4064" layer="16"/>
+<contactref element="X1" pad="1"/>
+<wire x1="4" y1="62.73" x2="6.25" y2="64.98" width="0.6096" layer="16"/>
+<wire x1="4" y1="58.48" x2="4" y2="62.73" width="0.6096" layer="16"/>
+<wire x1="6.25" y1="64.98" x2="6.31" y2="65.11" width="0.254" layer="16"/>
+<wire x1="4" y1="58.48" x2="8.75" y2="58.48" width="0.6096" layer="16"/>
+<wire x1="8.75" y1="58.48" x2="8.89" y2="58.42" width="0.6096" layer="16"/>
+<wire x1="4" y1="58.48" x2="3.81" y2="58.42" width="0.6096" layer="16"/>
 </signal>
 <signal name="GND">
 <polygon width="0.3048" layer="16" isolate="0.4064" orphans="yes">
 <vertex x="0" y="0"/>
-<vertex x="105.41" y="0"/>
-<vertex x="105.41" y="71.12"/>
-<vertex x="0" y="71.12"/>
+<vertex x="57.15" y="0"/>
+<vertex x="57.15" y="80.01"/>
+<vertex x="44.45" y="80.01"/>
+<vertex x="44.45" y="68.58"/>
+<vertex x="0" y="68.58"/>
 </polygon>
 <contactref element="U$2" pad="GND5"/>
 <contactref element="U$2" pad="GND4"/>
@@ -721,96 +745,65 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="GND@20"/>
 <contactref element="U$1" pad="GND@30"/>
 <contactref element="U$1" pad="GND@34"/>
-<wire x1="8.89" y1="25.4" x2="8.89" y2="38.1" width="0" layer="19" extent="1-1"/>
+<polygon width="0.4064" layer="1" isolate="0.3048" orphans="yes">
+<vertex x="0" y="68.58"/>
+<vertex x="44.45" y="68.58"/>
+<vertex x="44.45" y="80.01"/>
+<vertex x="57.15" y="80.01"/>
+<vertex x="57.15" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
+<contactref element="X1" pad="2"/>
+<contactref element="U$3" pad="GND"/>
 </signal>
 <signal name="RESET">
 <contactref element="U$2" pad="RESET"/>
 <contactref element="U$1" pad="GPIO25@22"/>
-<wire x1="8.89" y1="35.56" x2="10.16" y2="34.29" width="0.4064" layer="16"/>
-<wire x1="10.16" y1="34.29" x2="34.29" y2="34.29" width="0.4064" layer="16"/>
-<wire x1="34.29" y1="34.29" x2="58.42" y2="10.16" width="0.4064" layer="16"/>
-<wire x1="58.42" y1="10.16" x2="58.42" y2="6.35" width="0.4064" layer="16"/>
+<wire x1="14" y1="24.23" x2="34.25" y2="3.98" width="0.254" layer="16"/>
+<wire x1="10" y1="24.23" x2="14" y2="24.23" width="0.254" layer="16"/>
+<wire x1="10" y1="31.98" x2="10" y2="24.23" width="0.254" layer="16"/>
+<wire x1="9" y1="32.98" x2="10" y2="31.98" width="0.254" layer="16"/>
+<wire x1="34.25" y1="3.98" x2="34.29" y2="3.81" width="0.254" layer="16"/>
+<wire x1="9" y1="32.98" x2="8.89" y2="33.02" width="0.254" layer="16"/>
 </signal>
 <signal name="NSS">
 <contactref element="U$2" pad="NSS"/>
 <contactref element="U$1" pad="GPIO8/CE0@24"/>
-<wire x1="8.89" y1="33.02" x2="7.62" y2="34.29" width="0.4064" layer="16"/>
-<wire x1="7.62" y1="34.29" x2="2.54" y2="34.29" width="0.4064" layer="16"/>
-<wire x1="2.54" y1="34.29" x2="2.54" y2="2.54" width="0.4064" layer="16"/>
-<wire x1="2.54" y1="2.54" x2="68.58" y2="2.54" width="0.4064" layer="16"/>
-<wire x1="68.58" y1="2.54" x2="68.58" y2="6.35" width="0.4064" layer="16"/>
+<wire x1="12.75" y1="35.48" x2="44.25" y2="3.98" width="0.254" layer="16"/>
+<wire x1="12.75" y1="35.98" x2="12.75" y2="35.48" width="0.254" layer="16"/>
+<wire x1="12" y1="36.73" x2="12.75" y2="35.98" width="0.254" layer="16"/>
+<wire x1="7.75" y1="36.73" x2="12" y2="36.73" width="0.254" layer="16"/>
+<wire x1="7.75" y1="31.48" x2="7.75" y2="36.73" width="0.254" layer="16"/>
+<wire x1="8.75" y1="30.48" x2="7.75" y2="31.48" width="0.254" layer="16"/>
+<wire x1="44.25" y1="3.98" x2="44.45" y2="3.81" width="0.254" layer="16"/>
+<wire x1="8.75" y1="30.48" x2="8.89" y2="30.48" width="0.254" layer="16"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U$1" pad="GPIO10/MOSI@19"/>
 <contactref element="U$2" pad="MOSI"/>
-<wire x1="6.35" y1="38.1" x2="7.62" y2="39.37" width="0.4064" layer="16"/>
-<wire x1="7.62" y1="39.37" x2="38.1" y2="39.37" width="0.4064" layer="16"/>
-<wire x1="38.1" y1="39.37" x2="66.04" y2="11.43" width="0.4064" layer="16"/>
-<wire x1="66.04" y1="11.43" x2="66.04" y2="6.35" width="0.4064" layer="16"/>
+<wire x1="12.75" y1="32.98" x2="41.75" y2="3.98" width="0.254" layer="16"/>
+<wire x1="12.75" y1="34.23" x2="12.75" y2="32.98" width="0.254" layer="16"/>
+<wire x1="11.5" y1="35.48" x2="12.75" y2="34.23" width="0.254" layer="16"/>
+<wire x1="41.75" y1="3.98" x2="41.91" y2="3.81" width="0.254" layer="16"/>
+<wire x1="11.5" y1="35.48" x2="11.43" y2="35.56" width="0.254" layer="16"/>
 </signal>
 <signal name="MISO">
 <contactref element="U$1" pad="GPIO9/MISO@21"/>
 <contactref element="U$2" pad="MISO"/>
-<wire x1="6.35" y1="35.56" x2="7.62" y2="36.83" width="0.4064" layer="16"/>
-<wire x1="7.62" y1="36.83" x2="36.83" y2="36.83" width="0.4064" layer="16"/>
-<wire x1="36.83" y1="36.83" x2="63.5" y2="10.16" width="0.4064" layer="16"/>
-<wire x1="63.5" y1="10.16" x2="63.5" y2="6.35" width="0.4064" layer="16"/>
+<wire x1="12.75" y1="30.48" x2="39.25" y2="3.98" width="0.254" layer="16"/>
+<wire x1="12.75" y1="31.73" x2="12.75" y2="30.48" width="0.254" layer="16"/>
+<wire x1="11.5" y1="32.98" x2="12.75" y2="31.73" width="0.254" layer="16"/>
+<wire x1="39.25" y1="3.98" x2="39.37" y2="3.81" width="0.254" layer="16"/>
+<wire x1="11.5" y1="32.98" x2="11.43" y2="33.02" width="0.254" layer="16"/>
 </signal>
 <signal name="SPI_CLK">
 <contactref element="U$2" pad="CLK"/>
 <contactref element="U$1" pad="GPIO11/SCLK@23"/>
-<wire x1="6.35" y1="33.02" x2="3.81" y2="30.48" width="0.4064" layer="16"/>
-<wire x1="3.81" y1="30.48" x2="3.81" y2="3.81" width="0.4064" layer="16"/>
-<wire x1="3.81" y1="3.81" x2="58.42" y2="3.81" width="0.4064" layer="16"/>
-<wire x1="58.42" y1="3.81" x2="60.96" y2="6.35" width="0.4064" layer="16"/>
-</signal>
-<signal name="N$1">
-<wire x1="-8.89" y1="71.12" x2="-1.27" y2="71.12" width="0.254" layer="16"/>
-</signal>
-<signal name="N$2">
-<wire x1="-5.08" y1="74.93" x2="-5.08" y2="67.31" width="0.254" layer="16"/>
-</signal>
-<signal name="N$3">
-<wire x1="-8.89" y1="0" x2="-1.27" y2="0" width="0.254" layer="16"/>
-</signal>
-<signal name="N$4">
-<wire x1="-5.08" y1="3.81" x2="-5.08" y2="-3.81" width="0.254" layer="16"/>
-</signal>
-<signal name="N$5">
-<wire x1="106.68" y1="71.12" x2="114.3" y2="71.12" width="0.254" layer="16"/>
-</signal>
-<signal name="N$6">
-<wire x1="110.49" y1="74.93" x2="110.49" y2="67.31" width="0.254" layer="16"/>
-</signal>
-<signal name="N$7">
-<wire x1="106.68" y1="0" x2="114.3" y2="0" width="0.254" layer="16"/>
-</signal>
-<signal name="N$8">
-<wire x1="110.49" y1="3.81" x2="110.49" y2="-3.81" width="0.254" layer="16"/>
-</signal>
-<signal name="N$9">
-<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.254" layer="16"/>
-</signal>
-<signal name="N$10">
-<wire x1="0" y1="-1.27" x2="0" y2="-8.89" width="0.254" layer="16"/>
-</signal>
-<signal name="N$11">
-<wire x1="101.6" y1="76.2" x2="109.22" y2="76.2" width="0.254" layer="16"/>
-</signal>
-<signal name="N$12">
-<wire x1="105.41" y1="80.01" x2="105.41" y2="72.39" width="0.254" layer="16"/>
-</signal>
-<signal name="N$13">
-<wire x1="101.6" y1="-5.08" x2="109.22" y2="-5.08" width="0.254" layer="16"/>
-</signal>
-<signal name="N$14">
-<wire x1="105.41" y1="-1.27" x2="105.41" y2="-8.89" width="0.254" layer="16"/>
-</signal>
-<signal name="N$15">
-<wire x1="-3.81" y1="76.2" x2="3.81" y2="76.2" width="0.254" layer="16"/>
-</signal>
-<signal name="N$16">
-<wire x1="0" y1="80.01" x2="0" y2="72.39" width="0.254" layer="16"/>
+<wire x1="13.25" y1="27.48" x2="36.75" y2="3.98" width="0.254" layer="16"/>
+<wire x1="13.25" y1="28.73" x2="13.25" y2="27.48" width="0.254" layer="16"/>
+<wire x1="11.5" y1="30.48" x2="13.25" y2="28.73" width="0.254" layer="16"/>
+<wire x1="36.75" y1="3.98" x2="36.83" y2="3.81" width="0.254" layer="16"/>
+<wire x1="11.5" y1="30.48" x2="11.43" y2="30.48" width="0.254" layer="16"/>
 </signal>
 </signals>
 </board>
