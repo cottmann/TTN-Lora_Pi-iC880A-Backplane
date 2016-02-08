@@ -257,10 +257,10 @@
 </package>
 <package name="RPI-ZERO-NODRILLS">
 <description>Raspberry Pi Zero, full outline with position of big connectors &amp;amp; drill holes</description>
-<circle x="3.99" y="3.66" radius="3.1" width="0.127" layer="52"/>
-<circle x="61.99" y="3.66" radius="3.1" width="0.127" layer="52"/>
-<circle x="61.99" y="26.66" radius="3.1" width="0.127" layer="52"/>
-<circle x="3.99" y="26.66" radius="2.75" width="0.127" layer="52"/>
+<circle x="3.99" y="3.66" radius="1.375" width="0.127" layer="21"/>
+<circle x="61.99" y="3.66" radius="1.375" width="0.127" layer="52"/>
+<circle x="61.99" y="26.66" radius="1.375" width="0.127" layer="52"/>
+<circle x="3.99" y="26.66" radius="1.375" width="0.127" layer="52"/>
 <wire x1="0.49" y1="3.16" x2="3.49" y2="0.16" width="0.254" layer="52" curve="90"/>
 <wire x1="3.49" y1="0.16" x2="7.34" y2="0.16" width="0.254" layer="52"/>
 <wire x1="7.34" y1="0.16" x2="14.84" y2="0.16" width="0.254" layer="52"/>
